@@ -1,0 +1,161 @@
+/* ── Dark mode global ─────────────────────────────────────── */
+:root {
+  --bg: #111827;
+  --bg-card: #1f2937;
+  --border: rgba(255, 255, 255, 0.08);
+
+  --text: #f9fafb;
+  --text-muted: #9ca3af;
+
+  --primary: #14b8a6;
+  --danger: #f87171;
+  --success: #22c55e;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Bootstrap dark overrides ─────────────────────────────── */
+
+/* Navbar */
+.navbar {
+  background: #111827 !important;
+  border-bottom: 1px solid var(--border);
+}
+
+/* Cards */
+.card {
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border) !important;
+  color: var(--text) !important;
+}
+
+.card-title {
+  color: var(--text) !important;
+}
+
+/* Inputs */
+.form-control {
+  background: #111827 !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+  color: var(--text) !important;
+}
+
+.form-control:focus {
+  background: #111827 !important;
+  border-color: var(--primary) !important;
+  box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.15) !important;
+  color: var(--text) !important;
+}
+
+.form-control::placeholder {
+  color: #6b7280 !important;
+}
+
+.form-label {
+  color: var(--text-muted) !important;
+  font-size: 0.8125rem;
+}
+
+/* Buttons */
+.btn-primary {
+  background: linear-gradient(135deg, #14b8a6, #10b981) !important;
+  border: none !important;
+}
+
+.btn-primary:hover {
+  opacity: 0.88 !important;
+}
+
+.btn-outline-info {
+  color: var(--primary) !important;
+  border-color: var(--primary) !important;
+}
+
+.btn-outline-info:hover {
+  background: rgba(20, 184, 166, 0.12) !important;
+  color: var(--primary) !important;
+}
+
+.btn-outline-danger {
+  color: var(--danger) !important;
+  border-color: var(--danger) !important;
+}
+
+.btn-outline-danger:hover {
+  background: rgba(248, 113, 113, 0.1) !important;
+  color: var(--danger) !important;
+}
+
+/* Alerts */
+.alert-danger {
+  background: rgba(248, 113, 113, 0.1) !important;
+  border-color: rgba(248, 113, 113, 0.3) !important;
+  color: #fca5a5 !important;
+}
+
+.alert-success {
+  background: rgba(34, 197, 94, 0.1) !important;
+  border-color: rgba(34, 197, 94, 0.3) !important;
+  color: #bbf7d0 !important;
+}
+
+/* List group */
+.list-group-item {
+  background: transparent !important;
+  border-color: rgba(255, 255, 255, 0.06) !important;
+  color: var(--text) !important;
+}
+
+/* Links */
+a {
+  color: var(--primary);
+}
+
+a:hover {
+  color: #5eead4;
+}
+
+/* Text utils */
+.text-muted {
+  color: var(--text-muted) !important;
+}
+
+/* Badge */
+.bg-success-subtle {
+  background: rgba(34, 197, 94, 0.12) !important;
+}
+
+.text-success {
+  color: var(--success) !important;
+}
+
+.border-success-subtle {
+  border-color: rgba(34, 197, 94, 0.25) !important;
+}
+
+.bg-primary {
+  background: var(--primary) !important;
+}
+
+.bg-primary.bg-opacity-10 {
+  background: rgba(20, 184, 166, 0.12) !important;
+}
+
+.text-primary {
+  color: var(--primary) !important;
+}
